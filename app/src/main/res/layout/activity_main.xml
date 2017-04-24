@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/calendarView"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_display"
+        android:text="Calendar view date display"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    <TextView
+       android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Event Name:"
+          android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Event Name"
+        android:id="@+id/event_name"/>
+
+    <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Event Description:"
+          android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Event Description"
+        android:id="@+id/event_description"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Event"
+        android:id="@+id/add_event_button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancel_event_button"/>
+
+
+
+</LinearLayout>
+    </ScrollView>
