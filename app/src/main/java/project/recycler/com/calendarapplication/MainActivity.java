@@ -1,12 +1,8 @@
 package project.recycler.com.calendarapplication;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.provider.AlarmClock;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,8 +11,6 @@ import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, DisplayEventActivity.class);
+                startActivity(myIntent);
+            }
+        });
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,8 +104,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
             case R.id.add:
-                Toast.makeText(getApplicationContext(),"Add button pressed",Toast.LENGTH_SHORT).show();
-                return(true);
+               Intent i = new Intent(MainActivity.this,DisplayEventActivity.class);
+                startActivity(i);
+
 
         }
             return(super.onOptionsItemSelected(item));

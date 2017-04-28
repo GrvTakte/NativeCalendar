@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/scrollViewEvents">
+    android:id="@+id/linearLayoutEvents"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/linearLayoutEvents"
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="Display page"/>
 
-    </LinearLayout>
 
-</ScrollLayout>
+
+</LinearLayout>
